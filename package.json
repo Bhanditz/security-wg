@@ -4,7 +4,9 @@
   "scripts": {
     "test": "jest",
     "report": "node tools/reporter",
-    "validate": "node tools/vuln_valid"
+    "validate": "node tools/vuln_valid",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +17,8 @@
     "jest": "^23.6.0",
     "joi": "^13.1.0",
     "joi-extension-semver": "^2.0.0",
-    "yargs": "^11.0.0"
-  }
+    "yargs": "^11.0.0",
+    "snyk": "^1.161.1"
+  },
+  "snyk": true
 }
